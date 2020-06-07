@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Re-Cycle Tours</title>
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div class="line"></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="tours.html">Tours</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu-big">
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/logo/color.svg" alt="Re-Cycle Logo"></a>
+                <p><a href="index.html">Re-Cycle Tours</a></p>
+            </div>
+            <div class="menu-links">
+                <ul class="menu-links-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <p>
+                To contact us you can reach us on email: <strong>some@email.com</strong>, our telephone number:
+                <strong>+4712345678</strong>, or simply use the form<span class="hidden-text"> to the right</span>. Our
+                customer service
+                will gladly
+                answer any question you might have, any time of the day!
+            </p>
+            <div class="location">
+                <h5>Location:</h5>
+                <div id="map" class="location-map">
+                    <!--EMBED FROM GOOGLE-->
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+                <div class="form-group name">
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name*">
+                    <div class="form-error" id="firstNameError">Please enter your first name</div>
+
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name*">
+                    <div class="form-error" id="lastNameError">Please enter your last name</div>
+                </div>
+                <div class="form-group email-number">
+                    <input type="email" name="email" id="email" placeholder="Email Address*">
+                    <div class="form-error" id="emailError">Please enter your email address</div>
+                    <div class="form-error" id="invalidEmailError">Please enter a valid email address</div>
+
+                    <input type="text" name="number" placeholder="Phone Number">
+                </div>
+
+                <div class="message-label">
+                    <label for="message">Write Your Message Here:</label>
+                </div>
+
+                <div class="form-group message">
+                    <textarea name="message" class="message" id="message"></textarea>
+                    <div class="form-error" id="messageError">The message must be at least 10 characters.</div>
+                </div>
+                <div>
+                    <button class="contact-btn" type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer-text">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Condition</a></li>
+            <li><a href=""> FAQ</a></li>
+            <li>
+                <ul class="footer-icons">
+                    <li><a href=""><img src="images/facebook.png" alt="facebook icon"></a></li>
+                    <li><a href=""><img src="images/twitter.png" alt="twitter icon"></a></li>
+                    <li><a href=""><img src="images/ig.png" alt="instagram icon"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-BhllFXbUu-0BqdqZ_yGDINJjdAwUqGc&callback=initMap&libraries=&v=weekly"
+        defer></script>
+</body>
+
+</html>

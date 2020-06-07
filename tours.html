@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Re-Cycle Tours</title>
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div class="line"></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="tours.html">Tours</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu-big">
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/logo/color.svg" alt="Re-Cycle Logo"></a>
+                <p><a href="index.html">Re-Cycle Tours</a></p>
+            </div>
+            <div class="menu-links">
+                <ul class="menu-links-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="tours-main-content">
+        <section class="tours-showcase">
+            <h1>Upcoming Tour: Four day tour <br> of West-Norway</h1>
+            <button class="tour-btn"> <a href="tours.html">Book Tour</a></button>
+        </section>
+        <section class="tours-desc">
+            <h2>Description:</h2>
+            <p>If you want to experience the western part of Norway in a way like nothing else, we advise you take a
+                leap and join us for our first tour in 2020!</p>
+            <br>
+            <p>This 71 hour tour will kick off in Norfjordeid March 25th, and end in Førde March 28th. We will be biking
+                so and so far each day, so this tour is best suited for people that are used to bike for a longer period
+                each day. Parts of the track is a substancially steep climb, but most of it will happen on flat ground.
+            </p>
+        </section>
+        <section class="hotels-container">
+            <div class="hotels-text">
+                <h2>Hotels:</h2>
+                <p>
+                    We will spend two nights of the tour at two different hotels: SomeHotelname1 in SomeTown, and
+                    SomeHotelname2 in SomeOtherTown. Re-cycle has had a long and trustworthy relationship with these
+                    hotels, to make sure that the participants of the tours gets the best deal.
+                </p>
+            </div>
+            <div class="hotels">
+                <div class="hotel1">
+                    <img src="images/hotel1.jpg" alt="Hotel number one">
+                    <p>
+                        The first hotel is SomeHotelname1. It is located in SomeTown, at SomeAdress. We will arrive at
+                        the hotel the night of the 26th, and the next day we will eat the included breakfast, before we
+                        travel on to our next checkpoint.
+                    </p>
+                </div>
+                <div class="hotel2">
+                    <img src="images/hotel2.jpg" alt="Hotel number two">
+                    <p>
+                        The other hotel we will stay at is SomeOtherHotelname2. It is located in SomeOtherTown,at
+                        SomeAdress. The procedure is the same there; we arrive at the night of the 27th, eat a good
+                        breakfast the morning after and travel the rest of the way to our last destination.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tours-map-container">
+            <h2>Map of Tour:</h2>
+            <div class="tours-map" id="toursMap">
+                <iframe width="100%" height="450" frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJmcxVy21WFkYRTCwENqCR5gw&destination=f%C3%B8rde&key=AIzaSyB-BhllFXbUu-0BqdqZ_yGDINJjdAwUqGc"
+                    allowfullscreen></iframe>
+            </div>
+            <button class="tour-btn bottom-btn"><a href="#">Book Tour</a></button>
+        </section>
+        <div class="back-to-top">
+            <button id="backToTopBtn" class="back-to-top-btn"><img src="images/chevron-up.png"
+                    alt="Back to top arrow"></button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer-text">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Condition</a></li>
+            <li><a href=""> FAQ</a></li>
+            <li>
+                <ul class="footer-icons">
+                    <li><a href=""><img src="images/facebook.png" alt="facebook icon"></a></li>
+                    <li><a href=""><img src="images/twitter.png" alt="twitter icon"></a></li>
+                    <li><a href=""><img src="images/ig.png" alt="instagram icon"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/scroll.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-BhllFXbUu-0BqdqZ_yGDINJjdAwUqGc&callback=initMap&libraries=&v=weekly"
+        defer></script>
+</body>
+
+</html>
